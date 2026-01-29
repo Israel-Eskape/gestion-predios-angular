@@ -1,11 +1,88 @@
 {
   "predios": [
     {
-      "id": "832d",
-      "claveCatastral": "003-00-003-08",
-      "propietario": "juan perez",
-      "superficieTerreno": 300,
+      "claveCatastral": "003-00-003-01",
+      "propietario": "Juan Pérez",
+      "superficieTerreno": 250,
+      "tipoPredio": "URBANO",
+      "id": "a1f3"
+    },
+    {
+      "id": "b2e7",
+      "claveCatastral": "003-00-003-02",
+      "propietario": "María López",
+      "superficieTerreno": 480,
+      "tipoPredio": "RURAL"
+    },
+    {
+      "id": "c9d1",
+      "claveCatastral": "003-00-003-03",
+      "propietario": "Carlos Hernández",
+      "superficieTerreno": 320,
       "tipoPredio": "URBANO"
+    },
+    {
+      "id": "d4a8",
+      "claveCatastral": "003-00-003-04",
+      "propietario": "Ana Martínez",
+      "superficieTerreno": 600,
+      "tipoPredio": "RURAL"
+    },
+    {
+      "id": "e7b2",
+      "claveCatastral": "003-00-003-05",
+      "propietario": "Luis Ramírez",
+      "superficieTerreno": 290,
+      "tipoPredio": "URBANO"
+    },
+    {
+      "id": "f1c9",
+      "claveCatastral": "003-00-003-06",
+      "propietario": "Sofía Torres",
+      "superficieTerreno": 850,
+      "tipoPredio": "RURAL"
+    },
+    {
+      "id": "g5e4",
+      "claveCatastral": "003-00-003-07",
+      "propietario": "Miguel Sánchez",
+      "superficieTerreno": 310,
+      "tipoPredio": "URBANO"
+    },
+    {
+      "id": "h8a6",
+      "claveCatastral": "003-00-003-08",
+      "propietario": "Laura Gómez",
+      "superficieTerreno": 720,
+      "tipoPredio": "RURAL"
+    },
+    {
+      "id": "i3d5",
+      "claveCatastral": "003-00-003-09",
+      "propietario": "José Flores",
+      "superficieTerreno": 270,
+      "tipoPredio": "URBANO"
+    },
+    {
+      "id": "j6f2",
+      "claveCatastral": "003-00-003-10",
+      "propietario": "Daniela Cruz",
+      "superficieTerreno": 540,
+      "tipoPredio": "RURAL"
+    },
+    {
+      "id": "k9b7",
+      "claveCatastral": "003-00-003-11",
+      "propietario": "Ricardo Morales",
+      "superficieTerreno": 360,
+      "tipoPredio": "URBANO"
+    },
+    {
+      "id": "l2e8",
+      "claveCatastral": "003-00-003-12",
+      "propietario": "Fernanda Castillo",
+      "superficieTerreno": 910,
+      "tipoPredio": "RURAL"
     }
   ]
 }
