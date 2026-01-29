@@ -1,0 +1,11 @@
+{
+  "predios": [
+    {
+      "id": "832d",
+      "claveCatastral": "003-00-003-08",
+      "propietario": "juan perez",
+      "superficieTerreno": 300,
+      "tipoPredio": "URBANO"
+    }
+  ]
+}

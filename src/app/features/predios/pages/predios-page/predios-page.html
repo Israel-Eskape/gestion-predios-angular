@@ -1,0 +1,19 @@
+<div class="p-6 space-y-6">
+
+  <h1 class="text-4xl font-bold text-green-600">
+    Gestión de Predios 🏡
+  </h1>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="openForm()">
+    Nuevo Predio
+  </button>
+
+  <app-predios-list
+    (edit)="openForm($event)"
+    (remove)="eliminar($event)">
+  </app-predios-list>
+
+</div>
