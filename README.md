@@ -22,24 +22,22 @@ Predio {
   superficieTerreno: number;
   tipoPredio: 'URBANO' | 'RURAL';
 }
-Tecnologías usadas
+```
+
+## Tecnologías usadas
 
 Angular 21
-
 Angular Material
-
 TailwindCSS
-
 RxJS
-
 JSON Server (API mock)
 
-Ejecución del proyecto
+## Ejecución del proyecto
 Instalar dependencias
 npm install
 
-Levantar API mock
+## Levantar API mock
 npx json-server --watch db.json --port 3000
 
- Levantar aplicación
+## Levantar aplicación
 ng serve
