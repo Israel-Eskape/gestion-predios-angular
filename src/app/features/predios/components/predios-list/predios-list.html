@@ -55,7 +55,12 @@
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr> -->
+   <tr mat-row *matRowDef="let row; columns: displayedColumns"
+    [class.bg-green-200]="selectedRow === row"
+    class="cursor-pointer transition-colors duration-200 hover:!bg-green-100">
+</tr>
+
   </table>
 
 </div>

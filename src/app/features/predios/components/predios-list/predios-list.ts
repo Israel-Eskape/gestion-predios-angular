@@ -65,6 +65,12 @@ export class PrediosListComponent
     });
   }
 
+  selectedRow: any = null;
+
+  selectRow(row: any) {
+    this.selectedRow = row;
+  }
+
   recargar() {
     this.cargarPredios();
   }
