@@ -76,13 +76,12 @@
       "propietario": "Ricardo Morales",
       "superficieTerreno": 360,
       "tipoPredio": "URBANO"
-    },
-    {
-      "id": "l2e8",
+    }, {
       "claveCatastral": "003-00-003-12",
       "propietario": "Fernanda Castillo",
-      "superficieTerreno": 910,
-      "tipoPredio": "RURAL"
+      "superficieTerreno": 1024,
+      "tipoPredio": "RURAL",
+      "id": "l2e8"
     }
   ]
 }
