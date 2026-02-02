@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Predio } from '../../features/predios/models/predio.model';
@@ -10,7 +10,17 @@ export class PrediosService {
 
   private apiUrl = 'http://localhost:3000/predios'; 
 
+  private refreshSginal = signal(0);
+
+
   constructor(private http: HttpClient) {}
+
+  get RefreshSignal(){
+    return this.refreshSginal;
+  }
+  triggerRefreshSignal(){
+    this.refreshSginal.update(v => v + 1);
+  }
 
   getAll(): Observable<Predio[]> {
     return this.http.get<Predio[]>(this.apiUrl);

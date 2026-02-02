@@ -60,8 +60,11 @@ export class PredioFormComponent {
       : this.prediosService.create(predio);
 
     request$.subscribe({
-      next: () => this.dialogRef.close(true),
-      error: () => alert('Error al guardar predio')
+      next:()=>{
+        this.prediosService.triggerRefreshSignal(),
+        this.dialogRef.close(true);
+      },
+      error:() => alert('Error al guardar el predio')
     });
   }
 

@@ -4,7 +4,8 @@ import {
   Output,
   ViewChild,
   OnInit,
-  AfterViewInit
+  AfterViewInit,
+  effect
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
@@ -28,7 +29,7 @@ import { Predio } from '../../models/predio.model';
   ]
 })
 export class PrediosListComponent
-  implements OnInit, AfterViewInit {
+  implements AfterViewInit {
 
   displayedColumns: string[] = [
     'claveCatastral',
@@ -45,11 +46,13 @@ export class PrediosListComponent
   @Output() edit = new EventEmitter<Predio>();
   @Output() remove = new EventEmitter<number>();
 
-  constructor(private prediosService: PrediosService) {}
-
-  ngOnInit() {
-    this.cargarPredios();
+  constructor(private prediosService: PrediosService) {
+    effect(() => {
+      this.prediosService.RefreshSignal(),
+      this.cargarPredios()
+    });
   }
+
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
